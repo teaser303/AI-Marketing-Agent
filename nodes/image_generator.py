@@ -20,8 +20,8 @@ def generate_images(state):
                 prompt=prompt,
                 n=1,
                 size=size,
-                quality=quality,  # "hd" is higher quality (and cost)
-                style=style # "natural" is more realistic/photo style
+                quality=quality,  
+                style=style
             )
             image_url = response.data[0].url
             image_results.append({
